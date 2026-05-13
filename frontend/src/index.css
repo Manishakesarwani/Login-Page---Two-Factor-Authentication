@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header, .footer{
+    background: #093C5D;
+    color: white;
+}
+.header a:link, header a:visited{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+a > h1, .nav_button a{
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_button a, .nav_button button{
+    margin: 0 15px;
+}
+.nav_button button{
+    text-transform: uppercase;
+    padding: 10px 15px;
+    background: white;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all ease 0.2s;
+}
+.nav_button button:hover{
+    background: none;
+    color: white;
+}
+.box {
+    padding: 20px 30px;
+    border: 1px solid #3B7597;
+    width: 50%;
+    margin: 5% auto;
+    border-radius: 10px;
+}
+fieldset{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.disabled_form{
+    pointer-events: none;
+}
+.comp2 .disabled_form, .comp1 .disabled_form button{
+    display: none;
+}
+form div{
+    margin: 10px 0;
+}
+form input{
+    display: block;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    width: 90%;
+    border:  1px solid #3B7597;
+    outline: none;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+form button{
+    width: 94%;
+    padding: 10px 15px;
+    background: #3B7597;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid #3B7597;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+form button:hover{
+    background: none;
+    color: #3B7597;
+}
+form label{
+    text-transform: uppercase;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
