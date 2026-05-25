@@ -6,6 +6,7 @@ import AuthenticationPage from "./pages/AuthenticationPage";
 import { useUserAuthenticateContext } from "./hooks/useUserAuthenticateContext";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/ReactToastify.css'
+import SetNewPassword from "./pages/SetNewPassword";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={user ? <Home /> : <Navigate to="/authenticate" />} />
           <Route path="/authenticate" element={!user ? <AuthenticationPage /> : <Navigate to="/" />} />
+          <Route path="/forgot-password" element={!user ? <SetNewPassword /> : <Navigate to="/" />} />
         </Routes>
         <Footer />
       </BrowserRouter>

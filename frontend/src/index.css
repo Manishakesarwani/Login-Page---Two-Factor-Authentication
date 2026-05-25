@@ -60,7 +60,7 @@ fieldset{
 .disabled_form{
     pointer-events: none;
 }
-.comp2 .disabled_form, .comp1 .disabled_form button{
+.comp2 .disabled_form, .comp1 .disabled_form button, .resent-otp .disabled_form button{
     display: none;
 }
 form div{
@@ -96,6 +96,29 @@ form button:hover{
 }
 form label{
     text-transform: uppercase;
+}
+.resent-otp .disabled{
+    pointer-events: none;
+}
+.resent-otp {
+    text-align: center;
+    width: 94%;
+}
+.resent-otp button {
+    cursor: pointer;
+    padding: 10px 15px;
+    background: none;
+    outline: none;
+    border: 1px solid #3b7597;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #3b7597;
+    font-size: 11px;
+    transition: all ease-in 0.2s;
+}
+.resent-otp button:hover{
+    color: white;
+    background: #3b7597;
 }
 .footer{
     position: fixed;
